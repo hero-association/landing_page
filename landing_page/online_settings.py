@@ -85,12 +85,8 @@ WSGI_APPLICATION = 'landing_page.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'landing_page',
-        'PASSWORD':'Fuck.ch1na',
-        'USER': 'root',
-        'HOST':'127.0.0.1',
-        'PORT':'3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
