@@ -25,7 +25,9 @@ SECRET_KEY = ')9qdw3mq_7!ga6x39igzt5l=(glhldeor%%xpgl_d&=qzsb@s8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+]
 
 
 # Application definition
@@ -37,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'landing',
 ]
 
 MIDDLEWARE = [
@@ -48,6 +51,12 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+#静态文件路径
+
+STATICFILES_DIRS = (
+   'static',   
+)
 
 ROOT_URLCONF = 'landing_page.urls'
 
