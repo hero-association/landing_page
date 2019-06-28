@@ -103,3 +103,6 @@ venv.bak/
 # mypy
 .mypy_cache/
 landing/templates/.DS_Store
+uwsgi.ini
+landing_page/.DS_Store
+uwsgi.ini
